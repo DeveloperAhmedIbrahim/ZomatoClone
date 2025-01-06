@@ -1,1 +1,1 @@
-## Zamoto Landing Page Clone
+## Zomato Landing Page Clone

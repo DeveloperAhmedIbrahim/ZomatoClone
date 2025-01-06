@@ -319,6 +319,109 @@
     width: 35%;
 }
 
+.footer__section {
+    width: 100%;
+}
+
+.footer__section_upper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer__section_upper img {
+    width: 130px;
+}
+
+.footer__section_upper_container {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__section_upper_container button {
+    padding: 5px;
+    width: 90px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;    
+}
+
+.footer__section_middle {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.footer__section_navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__section_navigation h5 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer__section_link {
+    text-decoration: none;
+    color: grey;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.footer__section_link:hover {
+    color: black;
+}
+
+.footer__section_navigation_social {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer__section_navigation_social button {
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.footer__section_navigation_social button i {
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__section_navigation_logo img {
+    width: 100%;
+}
+
+.footer__section_bottom {
+    width: 95%;
+    color: grey;
+    margin: auto;
+    border-top: 1px solid grey;
+    padding-top: 1.5rem;
+}
+
 
 @media only screen and (max-width: 600px) {
     .navbar__menu_container .link {
@@ -366,5 +469,21 @@
     .app__section_semi_container {
         width: 95%;
         flex-direction: column;
+    }
+
+    .footer__section_middle {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer__section_middle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer__section_middle {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -325,6 +325,7 @@
 
 .footer__section_upper {
     display: flex;
+    gap: 15px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;

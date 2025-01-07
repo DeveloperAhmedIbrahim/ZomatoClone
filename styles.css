@@ -422,11 +422,33 @@
     padding-top: 1.5rem;
 }
 
+#navbar__mobile_btn {
+    display: none;
+}
+
+.navbar__mobile_btn:active {
+    background-color: white;
+    color: #FF738B;
+} 
+
+#navbar__mobile_btn:checked ~ .navbar__menu_container {
+    display: flex;
+}
 
 @media only screen and (max-width: 600px) {
-    .navbar__menu_container .link {
+    .navbar__menu_container {
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        background-color: rgba(239, 79, 95);
+        padding: 18px;
+        transition: 1s;
         display: none;
+        top: 65px;
+        left: 0;
     }
+
     .navbar__mobile_btn {
         display: flex;
     }
